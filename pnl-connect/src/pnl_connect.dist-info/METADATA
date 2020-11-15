@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.3
+Name: pnl-connect
+Formal-Name: PnL Connect
+App-ID: com.esceer.pnl-connect
+Version: 0.0.1
+Home-page: https://esceer.com/pnl-connect
+Author: esceer
+Author-email: roland.kts@gmail.com
+Summary: This is an android client for the pnl-sheet-janitor service.

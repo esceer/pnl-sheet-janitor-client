@@ -1,0 +1,49 @@
+[tool.briefcase]
+project_name = "PnL Connect"
+bundle = "com.esceer"
+version = "0.0.1"
+url = "https://esceer.com/pnl-connect"
+license = "MIT license"
+author = 'esceer'
+author_email = "roland.kts@gmail.com"
+
+[tool.briefcase.app.pnl-connect]
+formal_name = "PnL Connect"
+description = "This is an android client for the pnl-sheet-janitor service."
+icon = "src/pnl_connect/resources/pnl-connect"
+sources = ['src/pnl_connect']
+requires = ['requests']
+
+
+[tool.briefcase.app.pnl-connect.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.pnl-connect.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev20',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.pnl-connect.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev20',
+]
+
+# Mobile deployments
+[tool.briefcase.app.pnl-connect.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev20',
+]
+
+[tool.briefcase.app.pnl-connect.android]
+requires = [
+    'toga-android>=0.3.0.dev20',
+]
